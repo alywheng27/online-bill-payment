@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react"
+import Image from "next/image"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
@@ -216,10 +217,12 @@ export default function SystemSettingsPage() {
                   <Label htmlFor="logo-upload">Company Logo</Label>
                   <div className="flex items-center gap-4">
                     <div className="h-16 w-16 rounded bg-gray-100 flex items-center justify-center">
-                      <img
+                      <Image
                         src="/placeholder.svg?height=64&width=64"
                         alt="Company logo"
                         className="max-h-full max-w-full object-contain"
+                        width={64}
+                        height={64}
                       />
                     </div>
                     <div className="flex-1">
@@ -594,10 +597,12 @@ ${company_name} Team`}
                     <div className="flex items-center justify-between">
                       <div className="flex items-center space-x-4">
                         <div className="h-10 w-10 rounded bg-gray-100 flex items-center justify-center">
-                          <img
+                          <Image
                             src="/placeholder.svg?height=40&width=40"
                             alt="Stripe logo"
                             className="max-h-full max-w-full object-contain"
+                            width={64}
+                            height={64}
                           />
                         </div>
                         <div>
@@ -641,10 +646,12 @@ ${company_name} Team`}
                   <div className="flex items-center justify-between">
                     <div className="flex items-center space-x-4">
                       <div className="h-10 w-10 rounded bg-gray-100 flex items-center justify-center">
-                        <img
+                        <Image
                           src="/placeholder.svg?height=40&width=40"
                           alt="PayPal logo"
                           className="max-h-full max-w-full object-contain"
+                          width={64}
+                          height={64}
                         />
                       </div>
                       <div>
@@ -685,10 +692,12 @@ ${company_name} Team`}
                   <div className="flex items-center justify-between">
                     <div className="flex items-center space-x-4">
                       <div className="h-10 w-10 rounded bg-gray-100 flex items-center justify-center">
-                        <img
+                        <Image
                           src="/placeholder.svg?height=40&width=40"
                           alt="Twilio logo"
                           className="max-h-full max-w-full object-contain"
+                          width={64}
+                          height={64}
                         />
                       </div>
                       <div>
@@ -721,10 +730,12 @@ ${company_name} Team`}
                   <div className="flex items-center justify-between">
                     <div className="flex items-center space-x-4">
                       <div className="h-10 w-10 rounded bg-gray-100 flex items-center justify-center">
-                        <img
+                        <Image
                           src="/placeholder.svg?height=40&width=40"
                           alt="Google Analytics logo"
                           className="max-h-full max-w-full object-contain"
+                          width={64}
+                          height={64}
                         />
                       </div>
                       <div>
@@ -1538,10 +1549,12 @@ ${company_name} Team`}
                       <Label htmlFor="header-logo">Header Logo</Label>
                       <div className="flex items-center gap-4">
                         <div className="h-16 w-16 rounded bg-gray-100 flex items-center justify-center">
-                          <img
+                          <Image
                             src="/placeholder.svg?height=64&width=64"
                             alt="Header logo"
                             className="max-h-full max-w-full object-contain"
+                            width={64}
+                            height={64}
                           />
                         </div>
                         <div className="flex-1">
@@ -1556,10 +1569,12 @@ ${company_name} Team`}
                       <Label htmlFor="favicon">Favicon</Label>
                       <div className="flex items-center gap-4">
                         <div className="h-16 w-16 rounded bg-gray-100 flex items-center justify-center">
-                          <img
+                          <Image
                             src="/placeholder.svg?height=32&width=32"
                             alt="Favicon"
                             className="max-h-full max-w-full object-contain"
+                            width={64}
+                            height={64}
                           />
                         </div>
                         <div className="flex-1">

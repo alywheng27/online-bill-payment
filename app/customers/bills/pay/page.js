@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import { useState, useEffect, Suspense } from "react"
 import { useSearchParams } from "next/navigation"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
@@ -37,7 +37,7 @@ const mockBills = [
   },
 ]
 
-export default function PayBillsPage() {
+function PayBillsPageInner() {
   const searchParams = useSearchParams()
   const billId = searchParams.get("billId")
 
@@ -259,5 +259,13 @@ export default function PayBillsPage() {
           </Card>
         </div>
       </div>
+  )
+}
+
+export default function PayBillsPage() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <PayBillsPageInner />
+    </Suspense>
   )
 }

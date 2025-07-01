@@ -17,7 +17,7 @@ export default function HomePage() {
             <span className="text-xl font-bold text-gray-900">UtilityPay</span>
           </div>
           <nav className="hidden md:flex items-center space-x-6">
-            <Link href="#features" className="text-gray-600 hover:text-blue-600">
+            {/* <Link href="#features" className="text-gray-600 hover:text-blue-600">
               Features
             </Link>
             <Link href="#about" className="text-gray-600 hover:text-blue-600">
@@ -25,7 +25,7 @@ export default function HomePage() {
             </Link>
             <Link href="#contact" className="text-gray-600 hover:text-blue-600">
               Contact
-            </Link>
+            </Link> */}
           </nav>
           <div className="flex items-center space-x-3">
             <Button variant="outline" asChild>
